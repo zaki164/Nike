@@ -23,7 +23,7 @@ const NavBar = () => {
           ))}
         </ul>
         <a href="#" className="font-semibold text-lg lg:text-xl text-coral-red">
-          Sign in
+          Sign
         </a>
       </nav>
       <span
