@@ -12,6 +12,9 @@ body {
   font-family: "Palanquin", "sans-serif";
 }
 @layer utilities {
+  .custom-container {
+    @apply w-[90%] sm:w-[600px] md:w-[740px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[78%] relative m-auto;
+  }
   .flex_center {
     @apply flex justify-center items-center;
   }

@@ -6,12 +6,12 @@ import { navLinks } from "../constants";
 const NavBar = () => {
   const [navOpen, setnavOpen] = useState(false);
   return (
-    <header className="absolute top-0 left-0 flex_between py-6 w-full z-10 px-4">
+    <header className="absolute top-0 left-0 flex_between py-6 w-full z-10">
       <a href="#">
         <img src={headerLogo} alt="logo" />
       </a>
-      <nav className="md:flex_between md:flex-1 hidden md:mr-16">
-        <ul className="flex_center md:gap-12 lg:gap-20 flex-1 text-base lg:text-lg">
+      <nav className="md:flex_between md:flex-1 hidden xl:mr-16">
+        <ul className="flex_center md:gap-10 lg:gap-20 flex-1 text-base lg:text-lg">
           {navLinks?.map((item, i) => (
             <a
               href={item.href}
@@ -33,7 +33,7 @@ const NavBar = () => {
         <img src={hamburger} alt="hamburger icon" width={25} height={25} />
       </span>
       <nav
-        className={`md:hidden absolute transition duration-300 ${
+        className={`md:hidden absolute transition duration-300 z-20 ${
           navOpen ? "top-full opacity-1" : "-top-[300%] opacity-0"
         } w-full bg-slate-gray pb-2 rounded`}
       >

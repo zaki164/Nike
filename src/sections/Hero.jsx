@@ -19,8 +19,8 @@ const Hero = () => {
           Our Summer collections
         </p>
 
-        <h1 className="mt-6 md:mt-10 text-8xl max-sm:text-[62px] max-sm:leading-[72px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-6 md:mt-10 text-6xl xl:text-8xl max-sm:text-[62px] xl:z-10 max-sm:leading-[72px] font-bold">
+          <span className="xl:bg-white xl:whitespace-nowrap relative pr-10 ">
             The New Arrival
           </span>
           <br />
