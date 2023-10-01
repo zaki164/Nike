@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <main className="relative">
+    <main>
       <div className="custom-container">
         <NavBar />
         <Hero />

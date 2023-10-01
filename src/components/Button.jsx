@@ -5,6 +5,8 @@ const Button = ({
   textColor,
   fullWidth,
   borderColor,
+  semibold,
+  href,
 }) => {
   return (
     <a
@@ -12,8 +14,9 @@ const Button = ({
       ${backgroundColor ? backgroundColor : "bg-coral-red"}
       ${textColor ? textColor : "text-white"}
       ${fullWidth && "w-full"}
+      ${semibold && "font-semibold"}
       ${borderColor && `border-2 ${borderColor}`}`}
-      href="/"
+      href={href || "/"}
     >
       {label}{" "}
       {iconURL && (

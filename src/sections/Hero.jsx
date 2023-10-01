@@ -15,7 +15,7 @@ const Hero = () => {
     >
       {/* left section */}
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full pt-28">
-        <p className="text-l-xl font-montserrat text-coral-red">
+        <p className="text-base md:text-lg lg:text-xl font-montserrat text-coral-red">
           Our Summer collections
         </p>
 
