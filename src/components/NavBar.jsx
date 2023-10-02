@@ -6,6 +6,7 @@ import Button from "./Button";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
+import FacebookLogin from "@greatsumini/react-facebook-login";
 
 const NavBar = () => {
   const [navOpen, setnavOpen] = useState(false);
@@ -55,8 +56,21 @@ const NavBar = () => {
           {user ? (
             <Button label="Log out" semibold onClick={googleLogOut} />
           ) : (
-            <Button label="Log in" semibold onClick={googleLogin} />
+            <FacebookLogin
+              appId="808830491246849"
+              onSuccess={(response) => console.log(response)}
+              onFail={(error) => {
+                console.log("Login Failed!", error);
+              }}
+              onProfileSuccess={(response) => {
+                console.log("Get Profile Success!", response);
+              }}
+              render={({ onClick }) => (
+                <Button label="Log in" semibold onClick={onClick} />
+              )}
+            />
           )}
+          {/* <Button label="Log in" semibold onClick={googleLogin} /> */}
         </div>
       </nav>
       <span
