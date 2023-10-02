@@ -8,7 +8,7 @@ const Subscribe = () => {
     >
       <h3 className="text-2xl-3xl leading-[68px] text-center max-md:max-w-sm font-bold">
         Sign Up for
-        <span className="text-coral-red"> Updates </span>& Newsletter
+        <span className="text-animation"> Updates </span>& Newsletter
       </h3>
       <div className="w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[40%] flex justify-between items-center max-sm:flex-col gap-5 pl-6 p-2.5 sm:border sm:border-slate-gray rounded-full">
         <input

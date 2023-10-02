@@ -6,7 +6,7 @@ const PopularProducts = () => {
     <section id="products" className="section_padding !pt-12 md:!pt-32">
       <div className="flex flex-col justify-start gap-4 md:gap-6">
         <h2 className="text-3xl-4xl font-bold">
-          Our <span className="text-coral-red"> Popular </span> Products
+          Our <span className="text-animation"> Popular </span> Products
         </h2>
         <p className="lg:max-w-lg info-text">
           Experience top-notch quality and style with our sought-after

@@ -15,7 +15,7 @@ const Hero = () => {
     >
       {/* left section */}
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full pt-28">
-        <p className="text-base md:text-lg lg:text-xl font-montserrat text-coral-red">
+        <p className="text-base md:text-lg lg:text-xl font-montserrat font-semibold text-animation">
           Our Summer collections
         </p>
 
@@ -24,7 +24,7 @@ const Hero = () => {
             The New Arrival
           </span>
           <br />
-          <span className="text-coral-red inline-block mt-2 md:mt-6">
+          <span className="text-animation inline-block mt-2 md:mt-6">
             Nike
           </span>{" "}
           Shoes

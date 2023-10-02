@@ -45,6 +45,30 @@ body {
   .section_padding {
     @apply py-8 md:py-12;
   }
+  .bg-animation {
+    background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
+    /* background-size: 400% 400%; */
+    background-size: 200% auto;
+    animation: colorAnimation 15s ease-in-out infinite alternate forwards;
+  }
+  .text-animation {
+    background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
+    animation: colorAnimation 15s ease-in-out infinite alternate forwards;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @keyframes colorAnimation {
+    0% {
+      background-position: 0% 100%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

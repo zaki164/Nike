@@ -52,7 +52,7 @@ const Footer = () => {
           <img
             src={copyrightSign}
             alt="copyright sign"
-            className="rounded-full w-3 h-3 md:w-5 md:h-5"
+            className="rounded-full w-3 h-3 md:w-5 md:h-5 bg-animation"
           />
           <p>Copyright. All rights reserved.</p>
         </div>
