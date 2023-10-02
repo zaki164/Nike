@@ -16,7 +16,7 @@ const Subscribe = () => {
           placeholder="subscribe@nike.com"
           className="input focus:outline-none text-slate-gray max-sm:pl-5 max-sm:p-2.5 max-sm:border max-sm:border-slate-gray max-sm:rounded-full"
         />
-        <Button label="Sign Up" />
+        <Button label="Sign Up" href="/" />
       </div>
     </section>
   );

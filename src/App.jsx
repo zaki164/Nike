@@ -1,30 +1,11 @@
-import { NavBar } from "./components";
-import {
-  CustomerReviews,
-  Footer,
-  Hero,
-  PopularProducts,
-  Services,
-  SpecialOffer,
-  Subscribe,
-  SuperQuality,
-} from "./sections";
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./Layout";
 
 const App = () => {
   return (
-    <main>
-      <div className="custom-container">
-        <NavBar />
-        <Hero />
-        <PopularProducts />
-        <SuperQuality />
-        <Services />
-        <SpecialOffer />
-        <CustomerReviews />
-        <Subscribe />
-      </div>
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
   );
 };
 
