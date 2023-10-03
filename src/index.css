@@ -49,10 +49,10 @@ body {
 /* input::placeholder {
     color: #000;
   } */
-/* ::selection {
-    background-color: $color3e;
-    color: $blueColor;
-  } */
+::selection {
+  background-color: #ff6452;
+  color: #333;
+}
 .bg-animation {
   background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
   /* background-size: 400% 400%; */
@@ -65,6 +65,9 @@ body {
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.text-animation::selection {
+  -webkit-text-fill-color: #333;
 }
 @keyframes colorAnimation {
   0% {
