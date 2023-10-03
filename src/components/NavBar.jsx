@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 import Button from "./Button";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 // import FacebookLogin from "@greatsumini/react-facebook-login";
 
 const NavBar = () => {
@@ -81,7 +81,7 @@ const NavBar = () => {
             <a
               href={item.href}
               key={i}
-              className="font-montserrat text-slate-gray transition duration-300 hover:text-coral-red"
+              className="font-montserrat text-slate-gray dark:text-dark-slate-gray transition duration-300 hover:text-coral-red"
             >
               <li>{item.label}</li>
             </a>
@@ -99,7 +99,7 @@ const NavBar = () => {
         className="md:hidden cursor-pointer"
         onClick={() => setnavOpen(!navOpen)}
       >
-        <img src={hamburger} alt="hamburger icon" width={25} height={25} />
+        <RxHamburgerMenu className="w-7 h-7 sm:w-9 sm:h-9" />
       </span>
       <nav
         className={`md:hidden absolute transition duration-300 z-20 ${

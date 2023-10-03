@@ -10,7 +10,7 @@ const PopularProductCard = ({ imgURL, name, price, rate }) => {
       />
       <div className="mt-4 lg:mt-8 flex items-center gap-2.5">
         <Star />
-        <p className="font-montserrat text-l-xl leading-normal text-slate-gray">
+        <p className="font-montserrat text-l-xl leading-normal text-slate-gray dark:text-dark-slate-gray">
           ({rate})
         </p>
       </div>

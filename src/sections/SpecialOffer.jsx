@@ -33,9 +33,9 @@ const SpecialOffer = () => {
           <Button label="Shop now" iconURL={arrowRight} href={"/"} />
           <Button
             label="Learn more"
-            backgroundColor="bg-white"
-            borderColor="border-slate-gray"
-            textColor="text-slate-gray"
+            backgroundColor="transparent"
+            borderColor="border-slate-gray dark:border-dark-slate-gray"
+            textColor="text-slate-gray dark:text-dark-slate-gray"
             href={"/"}
           />
         </div>

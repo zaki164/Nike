@@ -1,6 +1,6 @@
 const ServiceCard = ({ imgURL, label, subtext }) => {
   return (
-    <div className="w-full sm:w-1/3 rounded-[20px] drop-shadow-2xl bg-white px-7 py-12 md:px-10 md:py-16">
+    <div className="w-full sm:w-1/3 rounded-[20px] drop-shadow-2xl  bg-white dark:bg-dark-background dark:drop-shadow-2xl-dark  px-7 py-12 md:px-10 md:py-16">
       <div className="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center bg-animation rounded-full">
         <img src={imgURL} alt={label} />
       </div>

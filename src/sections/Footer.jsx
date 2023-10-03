@@ -35,7 +35,7 @@ const Footer = () => {
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className="mt-1 md:mt-3 font-montserrat text-sm-base leading-normal text-white-400 hover:text-slate-gray cursor-pointer"
+                    className="mt-1 md:mt-3 font-montserrat text-sm-base leading-normal text-white-400 hover:text-slate-gray dark:hover:text-dark-slate-gray cursor-pointer"
                     key={link.name}
                   >
                     <a href={link.link}>{link.name}</a>
