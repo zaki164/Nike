@@ -14,6 +14,7 @@ export default {
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "dark-slate-gray": "#888",
+        "select-gray": "#333",
         "dark-background": "#1a1719",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },
