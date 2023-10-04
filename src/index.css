@@ -5,12 +5,54 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    @apply scroll-smooth font-palanquin;
+  }
+  .dark {
+    @apply text-white bg-dark-background;
+  }
+  input::placeholder {
+    @apply text-dark-slate-gray;
+  }
+  ::selection {
+    @apply bg-coral-red text-select-gray;
+  }
+  ::-webkit-scrollbar {
+    @apply w-[11px];
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-coral-red rounded-[5px];
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-coral-red/90 dark:bg-coral-red/60;
+  }
+  ::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
 }
-body {
-  font-family: "Palanquin", "sans-serif";
+
+@layer components {
+  .bg-animation {
+    @apply animate-colorAnimation;
+    background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% auto;
+  }
+  .text-animation {
+    @apply animate-colorAnimation;
+    background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-animation::selection {
+    -webkit-text-fill-color: #333;
+  }
 }
+
 @layer utilities {
   .custom-container {
     @apply w-[90%] sm:w-[600px] md:w-[740px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[78%] relative m-auto;
@@ -46,127 +88,3 @@ body {
     @apply py-8 md:py-12;
   }
 }
-
-@layer base {
-  input::placeholder {
-    @apply text-dark-slate-gray;
-  }
-  ::selection {
-    @apply bg-coral-red text-select-gray;
-  }
-  .dark {
-    @apply text-white bg-dark-background;
-  }
-  ::-webkit-scrollbar {
-    @apply w-[11px];
-  }
-  ::-webkit-scrollbar-track {
-    @apply bg-transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    @apply bg-coral-red rounded-[5px];
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-coral-red/90 dark:bg-coral-red/60;
-  }
-  ::-webkit-scrollbar-corner {
-    @apply bg-transparent;
-  }
-}
-
-.bg-animation {
-  background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 200% auto;
-  animation: colorAnimation 15s ease-in-out infinite alternate forwards;
-}
-.text-animation {
-  background: linear-gradient(-45deg, #ff6452, #e73c7e, #23a6d5, #23d5ab);
-  animation: colorAnimation 15s ease-in-out infinite alternate forwards;
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text-animation::selection {
-  -webkit-text-fill-color: #333;
-}
-@keyframes colorAnimation {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

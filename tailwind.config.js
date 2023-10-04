@@ -7,6 +7,23 @@ export default {
       center: true,
     },
     extend: {
+      keyframes: {
+        colorAnimation: {
+          "0%": {
+            "background-position": "0% 100%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          "100%": {
+            "background-position": "0% 100%",
+          },
+        },
+      },
+      animation: {
+        colorAnimation:
+          "colorAnimation 15s ease-in-out infinite alternate forwards",
+      },
       dropShadow: {
         "2xl": "0 25px 25px rgb(0 0 0 / 0.15)",
         "2xl-dark": "0 25px 25px rgb(150 150 150 / 0.15)",
