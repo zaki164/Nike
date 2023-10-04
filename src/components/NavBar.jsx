@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 import Button from "./Button";
@@ -6,6 +6,8 @@ import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import ThemeButton from "./ThemeButton";
+import HamburgerButton from "./HamburgerButton";
 // import FacebookLogin from "@greatsumini/react-facebook-login";
 
 const NavBar = () => {
@@ -75,8 +77,8 @@ const NavBar = () => {
       <Link href="/">
         <img src={headerLogo} alt="logo" />
       </Link>
-      <nav className="md:flex_between md:flex-1 hidden xl:mr-16">
-        <ul className="flex_center md:gap-8 lg:gap-20 flex-1 text-base lg:text-lg">
+      <nav className="md:flex_between md:flex-1 hidden">
+        <ul className="flex_center md:gap-6 lg:gap-20 flex-1 text-base lg:text-lg">
           {navLinks?.map((item, i) => (
             <a
               href={item.href}
@@ -95,16 +97,14 @@ const NavBar = () => {
           )}
         </div>
       </nav>
-      <span
-        className="md:hidden cursor-pointer"
-        onClick={() => setnavOpen(!navOpen)}
-      >
-        <RxHamburgerMenu className="w-7 h-7 sm:w-9 sm:h-9" />
-      </span>
+      <div className="flex justify-center items-center">
+        <ThemeButton />
+        <HamburgerButton navOpen={navOpen} setnavOpen={setnavOpen} />
+      </div>
       <nav
         className={`md:hidden absolute transition duration-300 z-20 ${
           navOpen ? "top-full opacity-1" : "-top-[300%] opacity-0"
-        } w-full bg-slate-gray pb-2 rounded`}
+        } w-full bg-modal-color p-2 rounded`}
       >
         <ul className="flex flex-col text-base">
           {navLinks?.map((item, i) => (

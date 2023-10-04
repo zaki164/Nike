@@ -54,10 +54,8 @@ body {
   ::selection {
     @apply bg-coral-red text-select-gray;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      @apply text-white bg-dark-background;
-    }
+  .dark {
+    @apply text-white bg-dark-background;
   }
   ::-webkit-scrollbar {
     @apply w-[11px];

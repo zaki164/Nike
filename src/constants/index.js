@@ -143,6 +143,21 @@ export const footerLinks = [
   },
 ];
 
+export const themeOption = [
+  {
+    title: "Use device theme",
+    option: "device",
+  },
+  {
+    title: "Dark theme",
+    option: "dark",
+  },
+  {
+    title: "Light theme",
+    option: "light",
+  },
+];
+
 export const socialMedia = [
   { src: facebook, alt: "facebook logo" },
   { src: twitter, alt: "twitter logo" },

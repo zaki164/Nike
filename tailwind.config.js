@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -15,6 +16,7 @@ export default {
         "slate-gray": "#6D6D6D",
         "dark-slate-gray": "#888",
         "select-gray": "#333",
+        "modal-color": "#454444",
         "dark-background": "#1a1719",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },
