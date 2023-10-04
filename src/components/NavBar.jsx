@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
 import Button from "./Button";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
 import ThemeButton from "./ThemeButton";
 import HamburgerButton from "./HamburgerButton";
 // import FacebookLogin from "@greatsumini/react-facebook-login";
