@@ -9,7 +9,7 @@
   html {
     @apply scroll-smooth font-palanquin;
   }
-  .dark {
+  html.dark {
     @apply text-white bg-dark-background;
   }
   input::placeholder {

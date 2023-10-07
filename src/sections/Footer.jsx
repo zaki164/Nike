@@ -56,7 +56,10 @@ const Footer = () => {
           />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <a className="font-montserrat" href="/">
+        <a
+          className="font-montserrat transition duration-300 hover:text-coral-red dark:hover:text-coral-red"
+          href="/"
+        >
           Terms & Conditions
         </a>
       </div>
