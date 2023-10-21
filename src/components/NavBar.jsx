@@ -82,7 +82,7 @@ const NavBar = () => {
             <a
               href={item.href}
               key={i}
-              className="font-montserrat text-slate-gray dark:text-dark-slate-gray transition duration-300 hover:text-coral-red dark:hover:text-coral-red"
+              className="font-montserrat text-slate-gray dark:text-dark-slate-gray transition duration-300 hover:text-coral-red hover:bg-gray-300 dark:hover:text-coral-red"
             >
               <li>{item.label}</li>
             </a>

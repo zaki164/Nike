@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { themeOption } from "../constants";
-import { BsFillSunFill, BsSun } from "react-icons/bs";
-import { WiMoonAltWaxingCrescent4 } from "react-icons/wi";
+import { MdBrightness4 } from "react-icons/md";
+import { MdBrightnessHigh } from "react-icons/md";
 
 const ThemeButton = () => {
   const [themeOptionOpen, setThemeOptionOpen] = useState(false);
   const [theme, setTheme] = useState("");
+  const [hasDark, setHasDark] = useState(false);
   const themeRef = useRef();
 
   // start handle show options
@@ -43,6 +44,9 @@ const ThemeButton = () => {
         document.documentElement.classList.remove("dark");
       }
     }
+    document.documentElement.classList.contains("dark")
+      ? setHasDark(true)
+      : setHasDark(false);
   }, [theme]);
 
   useEffect(() => {
@@ -80,7 +84,11 @@ const ThemeButton = () => {
         onClick={handleThemeIconClick}
         ref={themeRef}
       >
-        <WiMoonAltWaxingCrescent4 className="w-7 h-7" />
+        {hasDark ? (
+          <MdBrightnessHigh className="w-7 h-7" />
+        ) : (
+          <MdBrightness4 className="w-7 h-7" />
+        )}
       </span>
       <div
         className={`absolute transition duration-300 z-20 ${

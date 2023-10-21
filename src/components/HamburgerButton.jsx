@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const HamburgerButton = ({ navOpen, setnavOpen }) => {
@@ -24,7 +24,7 @@ const HamburgerButton = ({ navOpen, setnavOpen }) => {
 
   return (
     <span
-      className="md:hidden cursor-pointer"
+      className="md:hidden cursor-pointer text-coral-red"
       onClick={handleNavIconClick}
       ref={NavIconRef}
     >
