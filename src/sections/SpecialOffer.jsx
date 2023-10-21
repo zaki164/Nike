@@ -2,11 +2,6 @@ import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 import { Button } from "../components";
 
-import AOS from "aos";
-AOS.init({
-  once: true,
-});
-
 const SpecialOffer = () => {
   return (
     <section

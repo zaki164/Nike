@@ -1,11 +1,6 @@
 import { products } from "../constants";
 import { PopularProductCard } from "../components";
 
-import AOS from "aos";
-AOS.init({
-  once: true,
-});
-
 const PopularProducts = () => {
   return (
     <section

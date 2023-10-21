@@ -1,11 +1,6 @@
 import { services } from "../constants";
 import { ServiceCard } from "../components";
 
-import AOS from "aos";
-AOS.init({
-  once: true,
-});
-
 const Services = () => {
   return (
     <section

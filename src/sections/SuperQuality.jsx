@@ -1,9 +1,5 @@
 import { shoe8 } from "../assets/images";
 import { Button } from "../components";
-import AOS from "aos";
-AOS.init({
-  once: true,
-});
 
 const SuperQuality = () => {
   return (

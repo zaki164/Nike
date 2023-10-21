@@ -1,10 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import "aos/dist/aos.css";
+import { AOSInit } from "./aos";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <AOSInit />
       <Layout />
     </BrowserRouter>
   );

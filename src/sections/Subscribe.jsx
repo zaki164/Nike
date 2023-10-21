@@ -1,16 +1,11 @@
 import { Button } from "../components";
 
-import AOS from "aos";
-AOS.init({
-  once: true,
-});
-
 const Subscribe = () => {
   return (
     <section
       id="contact-us"
       className="section_padding flex items-center flex-col gap-10"
-      data-aos={"zoom-down"}
+      data-aos={"fade-down"}
     >
       <h3 className="text-2xl-3xl leading-[68px] text-center max-md:max-w-sm font-bold">
         Sign Up for
