@@ -2,9 +2,17 @@ import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 import { Button } from "../components";
 
+import AOS from "aos";
+AOS.init({
+  once: true,
+});
+
 const SpecialOffer = () => {
   return (
-    <section className="flex justify-between items-center max-xl:flex-col-reverse gap-10 section_padding">
+    <section
+      className="flex justify-between items-center max-xl:flex-col-reverse gap-10 section_padding"
+      data-aos={"fade-up"}
+    >
       <div className="flex-1">
         <img
           src={offer}

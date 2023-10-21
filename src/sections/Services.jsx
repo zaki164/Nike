@@ -1,9 +1,17 @@
 import { services } from "../constants";
 import { ServiceCard } from "../components";
 
+import AOS from "aos";
+AOS.init({
+  once: true,
+});
+
 const Services = () => {
   return (
-    <section className="flex justify-center flex-wrap gap-9 section_padding">
+    <section
+      className="flex justify-center flex-wrap gap-9 section_padding"
+      data-aos={"fade-up"}
+    >
       {services.map((service) => (
         <ServiceCard key={service.label} {...service} />
       ))}

@@ -1,9 +1,18 @@
 import { products } from "../constants";
 import { PopularProductCard } from "../components";
 
+import AOS from "aos";
+AOS.init({
+  once: true,
+});
+
 const PopularProducts = () => {
   return (
-    <section id="products" className="section_padding !pt-12 md:!pt-32">
+    <section
+      id="products"
+      className="section_padding !pt-12 md:!pt-32"
+      data-aos={"fade-up"}
+    >
       <div className="flex flex-col justify-start gap-4 md:gap-6">
         <h2 className="text-3xl-4xl font-bold">
           Our <span className="text-animation"> Popular </span> Products

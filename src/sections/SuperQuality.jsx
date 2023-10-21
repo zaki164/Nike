@@ -1,9 +1,14 @@
 import { shoe8 } from "../assets/images";
 import { Button } from "../components";
+import AOS from "aos";
+AOS.init({
+  once: true,
+});
 
 const SuperQuality = () => {
   return (
     <section
+      data-aos={"fade-up"}
       id="about-us"
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full section_padding"
     >
