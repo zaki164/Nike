@@ -8,7 +8,7 @@ AOS.init({
 
 const CustomerReviews = () => {
   return (
-    <section className="section_padding" data-aos={"fade-up"}>
+    <section className="section_padding" data-aos={"zoom-up"}>
       <h3 className="text-center text-3xl-4xl font-bold">
         What Our
         <span className="text-animation"> Customers </span>

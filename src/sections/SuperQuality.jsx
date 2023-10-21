@@ -8,7 +8,7 @@ AOS.init({
 const SuperQuality = () => {
   return (
     <section
-      data-aos={"fade-up"}
+      data-aos={"fade-right"}
       id="about-us"
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full section_padding"
     >

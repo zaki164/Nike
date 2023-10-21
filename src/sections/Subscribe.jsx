@@ -10,7 +10,7 @@ const Subscribe = () => {
     <section
       id="contact-us"
       className="section_padding flex items-center flex-col gap-10"
-      data-aos={"fade-up"}
+      data-aos={"zoom-down"}
     >
       <h3 className="text-2xl-3xl leading-[68px] text-center max-md:max-w-sm font-bold">
         Sign Up for

@@ -11,7 +11,7 @@ const SpecialOffer = () => {
   return (
     <section
       className="flex justify-between items-center max-xl:flex-col-reverse gap-10 section_padding"
-      data-aos={"fade-up"}
+      data-aos={"flip-left"}
     >
       <div className="flex-1">
         <img
