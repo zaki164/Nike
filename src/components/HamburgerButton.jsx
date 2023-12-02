@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const HamburgerButton = ({ navOpen, setnavOpen }) => {
   const NavIconRef = useRef();
 
-  // start handle show Nav
+  // start Handle show Nav
   const stopPropa = (e) => {
     e.stopPropagation();
   };
@@ -20,7 +20,7 @@ const HamburgerButton = ({ navOpen, setnavOpen }) => {
       }
     });
   }, [navOpen]);
-  // end handle show Nav
+  // end Handle show Nav
 
   return (
     <span
